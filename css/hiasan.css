@@ -1,0 +1,70 @@
+h1 {
+    color: darkred;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+p {
+    color:darkred;
+    text-align: justify;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 12pt;
+}
+body {
+    background-image: url(/img/bg.avif);
+    font-family:montserrat;
+    /* background-color: aliceblue; */
+    /* background-repeat: no-repeat; */
+}
+
+fieldset, legend {
+    border: blueviolet groove 2px;
+    border-radius: 10px;
+}
+
+legend {
+    font-size: 15pt;
+    border-radius: 5px;
+    padding-right: 15px;
+    padding-left: 15px;
+    color: blueviolet;
+    text-transform: uppercase;
+}
+
+img {
+    padding: 0px 20px 20px 20px;
+}
+
+div#menu {
+    text-align: center;
+    padding: 10px;
+    font-size: 20pt;
+}
+
+a.item:link, a.item:visited, a.item:active {
+    text-decoration: none;
+    color: blueviolet;
+    margin: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border:2px solid blueviolet;
+    border-radius: 6px;
+    position: relative;
+    top: 3px;
+    text-transform: uppercase;
+
+
+}
+
+a.item:hover {
+    background-color: aliceblue;
+    border-radius: 10px;
+}
+
+li {
+    color: blueviolet;
+}
+
+li:hover {
+    color: darkred;
+}
