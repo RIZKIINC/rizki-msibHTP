@@ -1,0 +1,37 @@
+<script>
+    // ada pelanggan membeli barang elektronik
+    // barang-barangnya misal ada TV=> 3 juta, Motor => 12 juta, Kulkas => 4 juta
+    // tentukan pembeliannya barangnya apa dan berapa yang dibeli
+
+    let pelanggan = "rizki";
+    let produk = "Motor";
+
+    if ( produk == 'TV'){
+        harsat = 3000000;
+    }
+    else if (produk == 'Motor'){
+        harsat = 12000000;
+    }
+    else if (produk == 'Kulkas'){
+        harsat = 4000000;
+    }
+    else {
+        harsat = 0;
+    }
+    let jmlbeli = 10;
+    let bruto = harsat * jmlbeli
+
+    let diskon = (produk == 'Motor') ? 0.1 * bruto : 0;
+    let harga_diskon = bruto - diskon;
+
+    document.write("Data Pembelian " +
+    "<br> Pelanggan " + pelanggan +
+    "<br> Produk yang dibeli " + produk +
+    "<br> Harga Satuan " + harsat +
+    "<br> Jumlah barang yang dibeli " + jmlbeli +
+    "<br> Total harga dari pembelian " + bruto +
+    "<br> Hasil Diskon " + harga_diskon
+
+    )
+
+</script>

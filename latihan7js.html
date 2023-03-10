@@ -1,0 +1,34 @@
+<script>
+    let pelanggan = "rizki";
+    let produk = "TV"
+
+    let harsat = 0;
+    switch(produk){
+        case 'TV':harsat = 3000000; break;
+        case 'Motor':harsat = 12000000; break;
+        case 'Kulkas':harsat = 4000000; break;
+        default:harsat = 0;
+    }
+    let jmlBeli = 3;
+    let bruto = harsat * jmlBeli;
+    let ppn = bruto * 0.11;
+
+    // membuat diskon untuk 3 produk
+    let discon = 0;
+    if (produk == 'TV') discon = 0.3 * bruto;
+    else if (produk == 'Motor') discon = 0.2 * bruto;
+    else discon = 0.05 * bruto;
+
+let hasil_discon = bruto - discon;
+
+    document.write("Data pembelian" +
+    "<br> Pelanggan : " + pelanggan +
+    "<br> Produk : " + produk +
+    "<br> Jumlah beli produk : " + jmlBeli +
+    "<br> Harga Satuan : " + harsat +
+    "<br> Total harga : " + bruto +
+    "<br> Diskon :" + discon +
+    "<br> PPN : " + ppn +
+    "<br> Total dipotong diskon : " + hasil_discon
+    );
+</script>
