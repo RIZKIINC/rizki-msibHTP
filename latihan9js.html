@@ -1,0 +1,28 @@
+<h3>
+    <body></body>
+    
+    <table style="padding: 10; text-align: center; width: 30%;">
+        <tr>
+            <thead>
+                <th>No</th>
+                <th>Nama</th>
+                <th>Alamat</th>
+            </thead>
+        </tr>
+        <tbody>
+            <script>
+                var no, warna;
+                for (no=1; no <= 20; no ++){
+                    warna = (no % 2 == 0 )? 'yellow' : 'blue';
+                    document.write(`
+                        <tr bgcolor="${warna}">
+                            <td>${no}</td>
+                            <td>Mahasiswa ${no}</td>
+                            <td>Alamat ${no}</td>
+                        </tr>
+                    `);
+                }
+            </script>
+        </tbody>
+    </table>
+</h3>
