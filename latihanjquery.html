@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan Pemanggilan Jquery</title>
+    <script src="js/jquery-3.6.4.js"></script>
+</head>
+<body>
+
+    <script>
+        $( document ).ready(function() {
+            //pembuatan jquery dengan pemanggilan selector tag
+            $("input").click(function(){
+                alert("Selamat Belajar Jquery");
+            });
+            //pembuatan jquery dengan pemanggilan id
+            $("#panggil_id").css("color", "orange");
+            //pembuatan jquery dengan pemangilan class
+
+            $(".panggil_clas").css("color", "blue");
+            
+            //menggunakan effect
+            $( "p" ).hide(900);
+            $( "p" ).slideDown(300);
+
+        });
+    </script>
+    <h3 id="panggil_id">Selamat Belajar Jquery menggunakan pemanggilan ID</h3>
+    <h1 class="panggil_clas">Selamat belajar jquery menggunakan pemanggil class</h1>
+
+    <p>Teksnya hilang</p>
+    <input type="submit" value="salam" />
+    
+    
+    
+</body>
+</html>
