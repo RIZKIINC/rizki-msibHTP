@@ -21,7 +21,7 @@
             </tr>
             <tr>
                 <td>
-                    <input type="button" name="submit" value="Hitung">
+                    <input type="submit" name="submit" value="Hitung">
                 </td>
             </tr>
         </table>
@@ -29,19 +29,18 @@
 
     <?php
 
-        if(isset($_POST['submit'])){
-            $sisi1 = $_POST['sisi1'];
-            $sisi2 = $_POST['sisi1'];
+    if(isset($_POST['submit'])){
+        $sisi1 = $_POST['sisi1'];
+        $sisi2 = $_POST['sisi2'];
 
-            $luaspersegi = $sisi1 * $sisi2;
+        $luaspersegi = $sisi1 * $sisi2;
+        echo 'Hasil perhitungan Luas Persegi';
+        echo '<br> Diketahui :';
+        echo '<br> Sisi Pertama : '.$sisi1;
+        echo '<br> Sisi Kedua : '.$sisi2;
 
-            echo 'Hasil Perhitungan Luas Persegi ';
-            echo '<br> Diketahui : ';
-            echo '<br> Sisi Pertama : '.$sisi1;
-            echo '<br> Sisi Kedua : '.$sisi2;
-            
-            echo '<br> Maka Luasnya = '.$luaspersegi;
-        }
+        echo '<br> Maka Luasnya ' .$luaspersegi;
+    }
 
     ?>
 </body>
